@@ -2,16 +2,19 @@ import { AgGridReact } from "ag-grid-react";
 import ImageCellRenderer from "./ImageCellRenderer";
 
 interface Props {
-  rowData: { image: string; name: string }[];
+  rowData: { url: string; name: string }[];
+  quickFilterText?: string;
 }
 
-function PokemonGrid({ rowData }: Props) {
+function PokemonGrid({ rowData, quickFilterText }: Props) {
   const gridOptions = {
     columnDefs: [
       {
-        field: "image",
+        field: "url",
         cellRenderer: (params: any) => (
-          <ImageCellRenderer url={params.data.image} />
+          <ImageCellRenderer
+            url={`https://img.pokemondb.net/artwork/${params.data.name}.jpg`}
+          />
         ),
         flex: 1,
       },
@@ -28,6 +31,7 @@ function PokemonGrid({ rowData }: Props) {
     rowData,
     rowHeight: 200,
     domLayout: "autoHeight",
+    quickFilterText,
   };
 
   return (
