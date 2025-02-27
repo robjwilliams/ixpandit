@@ -29,7 +29,7 @@ function PokemonGrid({ rowData, quickFilterText }: Props) {
     paginationPageSize: 5,
     paginationPageSizeSelector: [5, 10, 20],
     rowData,
-    rowHeight: 200,
+    rowHeight: 100,
     domLayout: "autoHeight",
     quickFilterText,
   };
