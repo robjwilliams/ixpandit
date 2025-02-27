@@ -11,7 +11,7 @@ function PokemonGrid({ rowData, quickFilterText }: Props) {
     columnDefs: [
       {
         field: "url",
-        cellRenderer: (params: any) => (
+        cellRenderer: (params: { data: { name: string } }) => (
           <ImageCellRenderer
             url={`https://img.pokemondb.net/artwork/${params.data.name}.jpg`}
           />
