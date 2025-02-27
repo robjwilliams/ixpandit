@@ -1,4 +1,4 @@
-import { AgGridReact } from "ag-grid-react";
+import { AgGridReact, AgGridReactProps } from "ag-grid-react";
 import ImageCellRenderer from "./ImageCellRenderer";
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
 }
 
 function PokemonGrid({ rowData, quickFilterText }: Props) {
-  const gridOptions = {
+  const gridOptions: AgGridReactProps<{ url: string; name: string }> = {
     columnDefs: [
       {
         field: "url",
