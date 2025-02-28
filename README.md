@@ -2,6 +2,8 @@
 
 Esta aplicación permite buscar Pokémons. La aplicación está construida con React, TypeScript y Vite, y utiliza Docker para facilitar su instalación y ejecución.
 
+[LIVE DEMO](https://ixpandit.robjwilliams.com/)
+
 ## Cómo ejecutar la aplicación
 
 ### Requisitos previos
