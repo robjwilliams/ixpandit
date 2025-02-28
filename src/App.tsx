@@ -57,6 +57,15 @@ function App() {
           </>
         )}
       </div>
+      <hr />
+      <div className="flex flex-row w-full justify-between items-center">
+        <span className="text-black">Hecho por rob</span>
+        <a href="https://github.com/robjwilliams/ixpandit" target="_blank">
+          <button className="flex flex-0 justify-center text-white">
+            Link a mi repo
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
