@@ -40,17 +40,17 @@ Adicionalmente se instalaron las siguientes librerias para agilizar y simplifica
 
 La aplicación está desplegada utilizando Terraform, lo que permite gestionar y automatizar la infraestructura como código. Se utilizan los siguientes servicios de AWS:
 
-- **Route 53**: Para la gestión de DNS.
-- **CloudFront**: Para la distribución de contenido con caching y optimización de carga.
-- **S3**: Para el almacenamiento y hosting de los archivos estáticos de la aplicación.
-- **IAM**: Para la gestión de permisos y seguridad en los diferentes servicios de AWS.
+- **Route 53**
+- **CloudFront**
+- **S3**
+- **IAM**
 
-Además, la aplicación cuenta con una pipeline de CI/CD implementada con GitHub Actions, que automatiza el proceso de despliegue. Esto incluye la actualización del contenido en S3 y la invalidación de la caché en CloudFront para garantizar que los cambios sean visibles de inmediato.
+Además, la aplicación cuenta con CI/CD implementado con GitHub Actions, que automatiza el proceso de despliegue. Esto incluye la actualización del contenido en S3 y la invalidación de la caché en CloudFront para garantizar que los cambios sean visibles de inmediato.
 
 ### Requisitos del Proyecto
 
 - **Diseño**: Libre elección, idealmente usando algún framework.
 - **Consulta de datos**: Vía PokeApi (https://pokeapi.co/docs/v2) sin utilizar ningún wrapper ni librería pre-armada para consumir la API.
 - **Búsqueda de Pokémons**: Debe permitir buscar Pokémons por nombre parcial (Ej: pika) y, idealmente, tener el resultado paginado.
-- **Calidad del código**: Se valorará la simpleza y prolijidad, así como el uso de linters, testing y Docker para facilitar la instalación.
+- **Calidad del código**: Se valorará la simpleza y prolijidad, así como el uso de linters, ~~testing~~ y Docker para facilitar la instalación.
 - **Repositorio público**: Compartir la solución en un repositorio público (Github, Bitbucket) con instrucciones para levantar la aplicación en el README.
