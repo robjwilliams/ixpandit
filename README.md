@@ -1,6 +1,6 @@
 # Pokémon Finder
 
-Esta aplicación permite buscar Pokémons por nombre parcial utilizando la PokeApi. La aplicación está construida con React, TypeScript y Vite, y utiliza Docker para facilitar su instalación y ejecución.
+Esta aplicación permite buscar Pokémons. La aplicación está construida con React, TypeScript y Vite, y utiliza Docker para facilitar su instalación y ejecución.
 
 ## Cómo ejecutar la aplicación
 
