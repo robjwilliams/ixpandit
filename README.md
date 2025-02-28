@@ -1,6 +1,6 @@
 # Pokémon Finder
 
-Esta aplicación permite buscar Pokémons. La aplicación está construida con React, TypeScript y Vite, y utiliza Docker para facilitar su instalación y ejecución.
+Esta aplicación permite buscar Pokémons. Está construida con React, TypeScript y Vite, y utiliza Docker para facilitar su instalación y ejecución.
 
 [LIVE DEMO](https://ixpandit.robjwilliams.com/)
 
@@ -38,7 +38,7 @@ Adicionalmente se instalaron las siguientes librerias para agilizar y simplifica
 
 ### Infraestructura
 
-La infraestructura de la aplicación está desplegada utilizando Terraform, lo que permite gestionar y automatizar la infraestructura como código. Se utilizan los siguientes servicios de AWS:
+La aplicación está desplegada utilizando Terraform, lo que permite gestionar y automatizar la infraestructura como código. Se utilizan los siguientes servicios de AWS:
 
 - **Route 53**: Para la gestión de DNS.
 - **CloudFront**: Para la distribución de contenido con caching y optimización de carga.
